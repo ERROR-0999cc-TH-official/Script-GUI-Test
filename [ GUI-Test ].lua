@@ -13,7 +13,7 @@ end
 local notifications = {    
 	{text = "กำลังโหลด script", delay = 2},  
 	{text = "โหลด script เสร็จสิ้น", delay = 1},   
-	{text = "Anti-AFK-Hub V.1.4", delay = 3},  
+	{text = "GUI-Test V.1.0", delay = 3},  
 }  
 
 local changelogGui  
@@ -24,7 +24,7 @@ for index, notif in ipairs(notifications) do
 	task.wait(notif.delay)  
 	pcall(function()  
 		game.StarterGui:SetCore("SendNotification", {  
-			Title = "[ Anti-AFK-Hud ]",  
+			Title = "[ GUI-Test ]",  
 			Text = notif.text,  
 			Duration = 8  
 		})  
@@ -144,7 +144,7 @@ Line.BorderSizePixel = 0
 Line.Parent = frame
 
 			local topLeftText = Instance.new("TextLabel", frame)    
-			topLeftText.Text = "Anti-AFK-Hub V.1.4"    
+			topLeftText.Text = "GUI-Test V.1.0"    
 			topLeftText.Font = Enum.Font.SourceSans    
 			topLeftText.TextSize = 14    
 			topLeftText.TextColor3 = Color3.fromRGB(180, 180, 180)    
